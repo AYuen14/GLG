@@ -1,0 +1,13 @@
+﻿@import "../utility/_mixins.scss";
+
+.fill-image {
+    @include fill-base-image;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+    img {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}

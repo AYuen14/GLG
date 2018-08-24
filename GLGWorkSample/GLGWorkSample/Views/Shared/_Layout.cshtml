@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/bundles/layoutmain.css")
+    @Scripts.Render("~/bundles/layoutmain.js")
+    @RenderSection("styles", required: false)
+    @RenderSection("scriptsHead", required: false)
+</head>
+<body>
+    <header>
+        @Html.Partial("_PartialHeader")
+    </header>
+    <div class="container-fluid body-content">
+        @RenderBody()
+    </div>
+    <footer class="text-muted">
+        @Html.Partial("_PartialFooter")
+    </footer>
+    @RenderSection("scriptsBody", required: false)
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@import
+    "Utility/_variables.scss",
+    "Utility/_mixins.scss";
+
+@import 
+    url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import 
+    "Layout/_header.scss",
+    "Layout/_footer.scss";
+
+@import 
+    "Components/_buttons.scss",
+    "Components/_images.scss",
+    "Components/_navigation.scss";

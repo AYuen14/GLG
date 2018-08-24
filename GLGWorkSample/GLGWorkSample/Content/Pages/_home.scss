@@ -1,0 +1,111 @@
+﻿body {
+    font-family: 'Open Sans',sans-serif !important;
+
+    .carousel-row {
+        display: block;
+
+        #myCarousel {
+            .carousel-indicators {
+                li {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 100%;
+                }
+
+                li:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .carousel-item {
+                padding-bottom: 50%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                .carousel-caption {
+                    .bg-black {
+                        background-color: rgba(0,0,0,0.7);
+                    }
+
+                    .carousel-heading {
+                        font-size: 40px;
+                        line-height:40px;
+                    }
+                }
+            }
+
+            .first-item {
+                background-image: url('../Images/marquee/marquee-1.jpg');
+            }
+
+            .second-item {
+                background-image: url('../Images/marquee/marquee-2.jpg');
+            }
+
+            .third-item {
+                background-image: url('../Images/marquee/marquee-3.jpg');
+            }
+
+            @media screen and (max-width: 767px) {
+                .carousel-item {
+                    .carousel-caption {
+                        .carousel-heading {
+                            font-size: 18px;
+                        }
+
+                        .carousel-description {
+                            font-size: 12px;
+                        }
+
+                        .btn-primary {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container-tile {
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
+
+            .fill-image {
+
+                .fill-image-text {
+                    transition: .5s ease;
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    text-align: center;
+                    color: white;
+                }
+            }
+
+            .fill-image:hover {
+                background-color: black !important;
+            }
+
+            .fill-image:hover img {
+                opacity: 0.5;
+            }
+
+            .fill-image:hover .fill-image-text {
+                opacity: 1;
+            }
+        }
+    }
+
+    .container-alternating {
+
+        .a-read-more:hover {
+            color: gray !important;
+            text-decoration: none;
+        }
+    }
+}

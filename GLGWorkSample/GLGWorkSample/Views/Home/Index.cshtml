@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/shared/_Layout.cshtml";
+}
+
+@section styles {
+    <link rel="stylesheet" type="text/css" href="~/Content/Pages/_home.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+
+}
+
+@section scriptsHead {
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+}
+
+
+    @Html.Partial("_PartialCarouselSlider")
+    @Html.Partial("_PartialTile")
+    @Html.Partial("_PartialAlternating")
