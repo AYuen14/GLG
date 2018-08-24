@@ -50,6 +50,15 @@
       opacity: 0.5; }
     body .container-tile .row .fill-image:hover .fill-image-text {
       opacity: 1; }
+    @media screen and (max-width: 414px) {
+      body .container-tile .row .fill-image img {
+        width: 414px !important; } }
+    @media screen and (max-width: 375px) {
+      body .container-tile .row .fill-image img {
+        width: 375px !important; } }
+    @media screen and (max-width: 320px) {
+      body .container-tile .row .fill-image img {
+        width: 320px !important; } }
   body .container-alternating .a-read-more:hover {
     color: gray !important;
     text-decoration: none; }

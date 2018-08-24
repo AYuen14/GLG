@@ -30,7 +30,7 @@
 
                     .carousel-heading {
                         font-size: 40px;
-                        line-height:40px;
+                        line-height: 40px;
                     }
                 }
             }
@@ -97,6 +97,30 @@
 
             .fill-image:hover .fill-image-text {
                 opacity: 1;
+            }
+
+            @media screen and (max-width: 414px) {
+                .fill-image {
+                    img {
+                        width: 414px !important;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 375px) {
+                .fill-image {
+                    img {
+                        width: 375px !important;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 320px) {
+                .fill-image {
+                    img {
+                        width: 320px !important;
+                    }
+                }
             }
         }
     }
